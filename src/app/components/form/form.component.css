@@ -1,0 +1,14 @@
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(201, 201, 201, 0.381);
+    padding: 5px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    border: 2px solid rgba(201, 201, 201, 0.874);
+}
+.campo{
+    margin: 3px;
+}
