@@ -8,7 +8,7 @@
     margin: 10px;
     border-radius: 10px;
     background-color: rgba(127, 255, 212, 0.207);
-    border: 2px solid aquamarine;;
+    border: 2px solid aquamarine;
 }
 .boton{
     background-color: rgba(240, 248, 255, 0);
@@ -16,3 +16,4 @@
     margin-left: 3px;
     font-weight: 600;
 }
+

@@ -1,8 +1,20 @@
 <div id="formulario">
-    <input class="campo" type="text" placeholder="Producto" [(ngModel)]="producto">
-    <input class="campo" type="text" placeholder="Localizacion" [(ngModel)]="localizacion">
-    <!--
+    <input class="campo" type="text" placeholder="Producto" [(ngModel)]="producto"> 
+    
+    <!-- <mat-form-field class="campo" [(ngModel)]="producto">
+        <mat-label>Producto</mat-label>
+        <input matInput placeholder="Ex. Pintura plastica" >
+      </mat-form-field>
+
+      <mat-form-field class="campo" [(ngModel)]="localizacion">
+        <mat-label>Localización</mat-label>
+        <input matInput placeholder="Ex. Pasillo 4" >
+      </mat-form-field>
+      -->
+      
+    <input class="campo" type="text" placeholder="Localizacion" [(ngModel)]="localizacion"> 
+    <!-- 
     <input id="cantidad" class="campo" type="number">
     -->
-    <button class="campo" (click)="creaFicha()">Añadir</button>
+    <button mat-button (click)="creaFicha()">Añadir</button>
 </div>

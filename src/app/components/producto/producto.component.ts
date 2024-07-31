@@ -1,12 +1,17 @@
 import { Component, input, Input } from '@angular/core';
 import { ServicestockService } from '../../service/servicestock.service';
 import { Istock } from '../../interface/istock';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @Component({
   selector: 'app-producto',
   standalone: true,
-  imports: [],
+  imports: [MatButtonModule, MatDividerModule, MatIconModule, MatFormFieldModule, MatInputModule],
   templateUrl: './producto.component.html',
   styleUrl: './producto.component.css'
 })
@@ -33,6 +38,10 @@ export class ProductoComponent {
   incrementa() {
     this.producto.cantidad++;
     this.servicio.save();
+  }
+
+  borrarProducto(){
+    this.servicio.borrarProducto(this.producto);
   }
 
 
